@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizza House</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8ed;
+    color: #302017;
+}
+
+header {
+    background: #c83b22;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: #f4bd52;
+    padding: 65px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.pizza {
+    font-size: 190px;
+}
+
+.button {
+    display: inline-block;
+    background: #c83b22;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 55px 8%;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 36px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.card .emoji {
+    font-size: 90px;
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.card p {
+    line-height: 1.5;
+    color: #6e5949;
+}
+
+.price {
+    color: #c83b22;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.about {
+    background: #f7ead9;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.contacts {
+    text-align: center;
+    line-height: 2;
+}
+
+footer {
+    background: #302017;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .pizza {
+        font-size: 130px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        justify-content: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🍕 PIZZA HOUSE</div>
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#menu">Меню</a>
+        <a href="#about">Про нас</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div>
+        <h1>Твоя улюблена піца вже тут!</h1>
+        <p>
+            Хрустке тісто, соковитий сир і найсвіжіші
+            інгредієнти. Обирай смак та насолоджуйся
+            справжньою піцою!
+        </p>
+        <a class="button" href="#menu">Переглянути меню</a>
+    </div>
+    <div class="pizza">🍕</div>
+</section>
+
+<section id="menu">
+    <h2>Наше меню</h2>
+
+    <div class="cards">
+        <article class="card">
+            <div class="emoji">🍕</div>
+            <h3>Маргарита</h3>
+            <p>Томатний соус, моцарела, базилік та оливкова олія.</p>
+            <div class="price">179 грн</div>
+        </article>
+
+        <article class="card">
+            <div class="emoji">🍕</div>
+            <h3>Пепероні</h3>
+            <p>Моцарела, томатний соус і пікантна пепероні.</p>
+            <div class="price">219 грн</div>
+        </article>
+
+        <article class="card">
+            <div class="emoji">🍕</div>
+            <h3>Чотири сири</h3>
+            <p>Моцарела, чедер, дорблю та пармезан.</p>
+            <div class="price">239 грн</div>
+        </article>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>Готуємо з душею 👨‍🍳</h2>
+    <p>
+        У Pizza House ми використовуємо якісні
+        інгредієнти та готуємо кожну піцу з любов'ю.
+        Наша мета — дарувати радість кожному гостю!
+    </p>
+</section>
+
+<section class="contacts" id="contacts">
+    <h2>Контакти</h2>
+    <p>📍 Адреса: навчальний приклад</p>
+    <p>🕒 Графік: щодня 10:00–22:00</p>
+    <p>☎️ Телефон: +380 00 000 00 00</p>
+</section>
+</main>
+
+<footer>
+    🍕 Pizza House — місце, де живе любов до піци.
+</footer>
+
+</body>
+</html>
